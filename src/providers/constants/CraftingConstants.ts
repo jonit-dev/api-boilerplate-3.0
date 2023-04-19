@@ -1,1 +1,0 @@
-export const CRAFTING_MIN_LEVEL_RATIO = 1.5;
