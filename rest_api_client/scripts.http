@@ -1,0 +1,23 @@
+### Scripts :: Adjust attack speed
+GET {{baseUrl}}/scripts/initial-coordinates HTTP/1.1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+### Scripts :: Fix eagles eye
+GET {{baseUrl}}/scripts/spell-fix HTTP/1.1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+ 
+### Scripts :: Fix depot
+GET {{baseUrl}}/scripts/fix-bugged-depots HTTP/1.1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+ 
+### Scripts :: Depot
+GET {{baseUrl}}/scripts/fix-depot-reference HTTP/1.1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+ 

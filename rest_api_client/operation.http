@@ -1,0 +1,7 @@
+# Operations :: Test Sitemap Generation 
+GET {{baseUrl}}/operations/test/sitemap HTTP/1.1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+###
+ 

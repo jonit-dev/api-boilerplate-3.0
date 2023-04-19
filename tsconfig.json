@@ -1,0 +1,47 @@
+{
+  "ts-node": {
+    "swc": true,
+    "transpileOnly": true,
+    "logError": true
+  },
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "lib": ["ES6"],
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "downlevelIteration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictFunctionTypes": false,
+    "useUnknownInCatchVariables": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@entities/*": ["entities/*"],
+      "@providers/*": ["providers/*"],
+      "@repositories/*": ["repositories/*"],
+      "@useCases/*": ["useCases/*"],
+      "@data/*": ["providers/data/*"]
+    },
+    "types": ["reflect-metadata", "jest"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+
+  "include": [
+    "src/**/*.ts",
+    "test/*.ts",
+    "src/jest/jestInitialSetup.ts",
+    "src/jest/jestSetupFilesAfterEnv.ts",
+    "src/*.d.ts",
+    "src/index.d.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
